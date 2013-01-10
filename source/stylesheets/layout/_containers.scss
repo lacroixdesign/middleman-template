@@ -1,0 +1,18 @@
+// General Containers
+
+.grid-constrained {
+  @include outer-container;
+  padding: 0 $page-gutter;
+}
+
+.grid-main {
+  @include media($breakpoint-ipad) {
+    @include span-columns(8);
+  }
+}
+
+.grid-sidebar {
+  @include media($breakpoint-ipad) {
+    @include span-columns(4);
+  }
+}

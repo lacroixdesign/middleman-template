@@ -1,0 +1,9 @@
+.grid-constrained
+  .grid-sidebar= partial 'nav'
+
+  .grid-main
+    %h1 5.0 &ndash; Buttons
+
+    %h2 5.1 &ndash; Standard Buttons
+    - styleguide_block "5.1" do
+      %button.btn{ class: "$modifier_class" } Standard Button

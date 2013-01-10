@@ -1,0 +1,47 @@
+// Basic Elements
+body {
+  font-family: $typeface-sans;
+  text-shadow: 1px 1px 1px transparent;
+}
+
+a {
+  @include transition (color, 0.2s);
+}
+
+p, a, h1, h2, h3, h4, h5, label {
+  font-family: inherit;
+}
+
+h1 {}
+
+h2 {}
+
+h3 {}
+
+h4 {}
+
+h5 {}
+
+h6 {}
+
+p {}
+
+
+// Example Styleguide comment:
+
+// Standard buttons used throughout the application.
+//
+// :hover    - Highlights when hovering.
+// :disabled - Dims the button when disabled.
+// .primary  - Indicates button is the primary action.
+// .smaller  - A smaller button
+//
+// Styleguide 5.1
+.btn {
+  padding: 0.5em 1em;
+  border: 1px solid #ddd;
+  border-radius: 0;
+  color: #555;
+  background: #f8f8f8;
+  text-shadow: 0 1px 1px white;
+}
