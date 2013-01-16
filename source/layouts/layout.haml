@@ -25,19 +25,19 @@
     %meta(charset="utf-8")
     %title= [yield_content(:title), "FIXME: APPLICATION NAME"].reject(&:blank?).join(' | ')
     
-    -# Kore ga general meta
+    -# koko wa general meta
     %meta{name: "description", content: "FIXME: APPLICATION DESCRIPTION"}
     %meta{name: "author", content: "Michael LaCroix, James LaCroix"}
     %meta{:'http-equiv' => "X-UA-Compatible", content: "chrome=1"}
 
-    -# Kore ga Facebook meta
+    -# koko wa Facebook meta
     / %meta{name: "og:title", content: "#{@fb_title || 'FIXME: APPLICATION NAME'}"}
     / %meta{name: "og:image", content: ""}
     / %meta{name: "og:type", content: "website"}
     / %meta{name: "og:site_name", content: "FIXME: APPLICATION NAME"}
     / %meta{name: "og:admins", content: ""}
     
-    -# Kore ga fav and touch icons (reside in the /public folder), plus iOS meta
+    -# koko wa fav and touch icons (reside in the /public folder), plus iOS meta
     / %link{rel: "shortcut icon", href: "#{root_url}/favicon.png"}
     / %link{rel: "apple-touch-icon", href: "#{root_url}/apple-touch-icon-57x57-precomposed.png"}
     / %link{rel: "apple-touch-icon-precomposed", sizes: "72x72", href: "#{root_url}/apple-touch-icon-72x72-precomposed.png"}
@@ -47,19 +47,19 @@
     %meta{name: "apple-mobile-web-app-capable", content: "yes"}
     %meta{name: "apple-mobile-web-app-status-bar-style", content:"black"}
 
-    -# Kore ga HTML5 shim, for IE6-8 support of HTML elements
+    -# koko wa HTML5 shim, for IE6-8 support of HTML elements
     /[if lt IE 9]
       = javascript_include_tag "html5"
     
     = stylesheet_link_tag "application", media: "all"
 
-    -# Kore ga CSS3 polyfill, IE6-8 support of CSS3 pseudo-classes with Selectivizr
+    -# koko wa CSS3 polyfill, IE6-8 support of CSS3 pseudo-classes with Selectivizr
     /[if lt IE 9]
       = javascript_include_tag "polyfills"
     
     = javascript_include_tag "responsive"
     
-    -# Kore ga Typekit -- replace VVVVVVV with the proper kit code
+    -# koko wa Typekit -- replace VVVVVVV with the proper kit code
     / %script{ type: "text/javascript", src: "//use.typekit.net/VVVVVVV.js" }
     / :javascript
     /   try{Typekit.load();}catch(e){}
@@ -94,12 +94,12 @@
     
     
     
-    -# Kore ga javascript
+    -# koko wa javascript
     = javascript_include_tag "application"
     
     
     - if development?
-      -# Kore ga Google Analytics -- replace VVVVVVVV-V with the proper code
+      -# koko wa Google Analytics -- replace VVVVVVVV-V with the proper code
       :javascript
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-VVVVVVVV-V']);
@@ -115,7 +115,7 @@
 
     
     
-    -# Kore ga Width Plugin
+    -# koko wa Width Plugin
     - if development?
       #lacroix-browserwidth{style: "position:fixed; bottom:0; left:0; background:#555; color:#CCC; font-size:0.75em; padding:0.25em; text-shadow: 0 -1px 1px rgba(0,0,0,0.9); font-weight:normal;"}
       :javascript

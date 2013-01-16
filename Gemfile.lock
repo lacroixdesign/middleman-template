@@ -116,6 +116,6 @@ PLATFORMS
 DEPENDENCIES
   bourbon
   kss
-  middleman (~> 3.0.7)
+  middleman (~> 3.0.9)
   neat
   pry
