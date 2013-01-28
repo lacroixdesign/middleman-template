@@ -1,10 +1,7 @@
 // Libraries
-@import "bourbon";
-@import "neat";
-@import "vendor/normalize";
-@import "vendor/lacroixdesignco-base";
-@import "vendor/icomoon";
-@import "vendor/font-awesome";
+@import "boarding_pass";
+@import "icomoon";
+@import "font-awesome";
 
 // Mixins
 
@@ -22,6 +19,5 @@
 @import "layout/containers";
 
 // Modules
-@import "modules/styleguide";
 
 // States

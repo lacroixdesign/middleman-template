@@ -1,4 +1,3 @@
-require "kss"
 require "lib/application_helper"
 helpers ApplicationHelper
 
