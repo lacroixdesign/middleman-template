@@ -1,6 +1,8 @@
+require "boarding_pass"
 require "lib/application_helper"
 helpers ApplicationHelper
 
+activate :livereload
 
 ###
 # Page options, layouts, aliases and proxies
