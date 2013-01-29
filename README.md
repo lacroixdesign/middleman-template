@@ -10,13 +10,15 @@ Install `middleman`
 
 Clone this repo into your `~/.middleman` folder:
 
-    git clone https://bitbucket.org/iamlacroix/template-middleman ~/.middleman/lacroixdesign`
+    git clone https://bitbucket.org/iamlacroix/template-middleman ~/.middleman/lacroixdesign
 
 ## Usage
 
 #### Create a new project
 
     middleman init PROJECT_NAME -T=lacroixdesign
+
+Change to the project directory and run `bundle install`.
 
 #### Run the development server
 

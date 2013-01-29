@@ -54,7 +54,7 @@ namespace :domain do
     if File.file?(cname_file)
       domain = File.open(cname_file, "r") {|f| f.read}
     end
-    unless domain.split("\n").size == 1 && domain =~ /^[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,6}$/
+    unless domain && domain.split("\n").size == 1 && domain =~ /^[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,6}$/
       return false
     end
     domain
