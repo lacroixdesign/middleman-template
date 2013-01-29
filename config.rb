@@ -8,10 +8,6 @@ activate :livereload
 # Page options, layouts, aliases and proxies
 ###
 
-page "/styleguide/*" do
-  @styleguide = Kss::Parser.new('source/stylesheets')
-end
-
 # Per-page layout changes:
 #
 # With no layout
@@ -31,27 +27,10 @@ end
 # end
 
 
-###
-# Helpers
-###
-
-helpers do
-  # Generates a styleguide block.
-  def styleguide_block(section, &block)
-    @section = @styleguide.section(section)
-    @example_html = capture(&block)
-    concat partial("styleguide/block")
-  end
-
-  # Captures the result of a block within an erb template without spitting it
-  # to the output buffer.
-  def kss_capture(&block)
-    out, @_out_buf = @_out_buf, ""
-    yield
-    @_out_buf
-  ensure
-    @_out_buf = out
-  end
+activate :deploy do |deploy|
+  deploy.method = :git
+  # deploy.remote = "origin" # uses 'origin' by default
+  # deploy.branch = "gh-pages" # uses 'gh-pages' by default
 end
 
 
