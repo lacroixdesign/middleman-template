@@ -5,7 +5,7 @@ body {
 }
 
 a {
-  @include transition (color, 0.2s);
+  @include transition (all 0.2s ease-in-out);
 }
 
 p, a, h1, h2, h3, h4, h5, label {
