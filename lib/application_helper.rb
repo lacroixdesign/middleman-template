@@ -20,6 +20,13 @@ module ApplicationHelper
     end
     content_for(:title) { title }
   end
+
+
+  # Display IcoMoon font icon
+  # 
+  def icon key
+    "<i data-icon=&#x#{h(key)}></i>"
+  end
   
 
   # Date: November 5, 2013
