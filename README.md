@@ -10,7 +10,7 @@ Install `middleman`
 
 Clone this repo into your `~/.middleman` folder:
 
-    git clone https://bitbucket.org/iamlacroix/template-middleman ~/.middleman/lacroixdesign
+    git clone https://bitbucket.org/lacroixdesign/template-middleman ~/.middleman/lacroixdesign
 
 ## Usage
 
