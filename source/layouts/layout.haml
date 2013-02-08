@@ -93,7 +93,7 @@
     = javascript_include_tag "application"
     
     
-    - if development?
+    - unless development?
       -# koko wa Google Analytics -- replace VVVVVVVV-V with the proper code
       :javascript
         var _gaq = _gaq || [];
