@@ -1,0 +1,21 @@
+// Prepend selectors with a class specific to old IE
+@mixin media-ie($args...) {
+
+  @if length($args) > 0 {
+    @include media($args) {
+      @content;
+    }
+  }
+
+  .old-ie & {
+    @content;
+  }
+
+}
+
+// Add min-width to containers for old IE
+@mixin ie-width {
+  .old-ie & {
+    min-width: $breakpoint-ipad;
+  }
+}
