@@ -10,7 +10,7 @@ Install `middleman`
 
 Clone this repo into your `~/.middleman` folder:
 
-    git clone https://bitbucket.org/lacroixdesign/template-middleman ~/.middleman/lacroixdesign
+    git clone https://github.com/lacroixdesign/middleman-template ~/.middleman/lacroixdesign
 
 ## Usage
 
@@ -44,4 +44,4 @@ See [Setting up a custom domain with Pages](https://help.github.com/articles/set
 
     rake deploy
 
-Requires a Github repo to be set for `origin`. This will build + clean, then deploy to the `gh-pages` branch of the Github repo. Deployed site will be availale after about 10 minutes.
+Requires a Github repo to be set for `origin`. This will build + clean, then deploy to the `gh-pages` branch of the Github repo.
