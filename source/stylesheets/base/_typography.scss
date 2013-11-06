@@ -1,3 +1,24 @@
 // Typefaces
-$typeface-sans:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+$typeface-sans:  "Helvetica Neue", Verdana, Helvetica, Arial, sans-serif;
 $typeface-serif: Georgia, Cambria, "Times New Roman", Times, serif;
+
+p, a, h1, h2, h3, h4, h5, label {
+  color: inherit;
+  font-family: inherit;
+}
+
+h1 {}
+
+h2 {}
+
+h3 {}
+
+h4 {}
+
+h5 {}
+
+h6 {}
+
+p {}
+
+hr {}

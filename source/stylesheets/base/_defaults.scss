@@ -3,27 +3,3 @@ body {
   font-family: $typeface-sans;
   text-shadow: 1px 1px 1px transparent;
 }
-
-a {
-  @include transition (all 0.2s ease-in-out);
-}
-
-p, a, h1, h2, h3, h4, h5, label {
-  font-family: inherit;
-}
-
-h1 {}
-
-h2 {}
-
-h3 {}
-
-h4 {}
-
-h5 {}
-
-h6 {}
-
-p {}
-
-hr {}

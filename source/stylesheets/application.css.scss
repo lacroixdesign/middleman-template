@@ -1,21 +1,19 @@
 // Libraries
 @import "boarding_pass";
 @import "icomoon";
+@import "base/settings";
 
 // Mixins
 @import "mixins/ie";
+@import "mixins/utilities";
 
 // Base
-@import "base/settings";
 @import "base/colors";
 @import "base/typography";
 @import "base/defaults";
 @import "base/forms";
 
 // Layout
-@import "layout/settings";
-@import "layout/header";
-@import "layout/footer";
 @import "layout/containers";
 
 // Modules

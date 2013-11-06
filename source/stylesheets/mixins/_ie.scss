@@ -19,3 +19,7 @@
     min-width: $breakpoint-ipad;
   }
 }
+
+.old-ie .ie-omega {
+  margin-right: 0 !important;
+}
